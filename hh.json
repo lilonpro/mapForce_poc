@@ -1,0 +1,45 @@
+{
+	"client": {
+		"name": {
+			"give": "James",
+			"family": "Bond"
+		},
+		"dob": {
+			"year": 1949,
+			"month": 10,
+			"date":  1
+		},
+		"relationships": [
+			{
+				"name": {
+					"give": "Jim",
+					"family": "Bond"
+				},
+				"dob": {
+					"year": 1979,
+					"month": 10,
+					"date":  1
+				},
+				"offset": 1,
+				"type": "son"
+			}
+		]
+	},
+	"retirementAge": "60",
+	"plans": [
+		{
+			"id": "123",
+			"name": "plan_0"
+		},
+		{
+			"id": "234",
+			"name": "plan_1"
+		},
+		{
+			"id": "345",
+			"name": "plan_2"
+		}
+	],
+	"assetsTotal": 600,
+	"assetsAvg": 200
+}

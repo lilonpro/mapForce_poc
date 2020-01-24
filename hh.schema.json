@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/object_02",
+  "definitions": {
+    "object_01": {
+      "title": "client",
+      "type": "object",
+      "required": [
+        "name",
+        "dob"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "name",
+          "type": "object",
+          "required": [
+            "give",
+            "family"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "give": {
+              "type": "string"
+            },
+            "family": {
+              "type": "string"
+            }
+          }
+        },
+        "dob": {
+          "title": "dob",
+          "type": "object",
+          "required": [
+            "year",
+            "month",
+            "date"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "year": {
+              "type": "number"
+            },
+            "month": {
+              "type": "number"
+            },
+            "date": {
+              "type": "number"
+            }
+          }
+        },
+        "offset": {
+          "type": "number"
+        },
+        "relationships": {
+          "type": "array",
+          "title": "relationships",
+          "items": {
+            "$ref": "#/definitions/object_01"
+          }
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "object_02": {
+      "type": "object",
+      "required": [
+        "client",
+        "retirementAge",
+        "plans",
+        "assetsTotal",
+        "assetsAvg"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "client": {
+          "$ref": "#/definitions/object_01"
+        },
+        "retirementAge": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array",
+          "title": "plans",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "assetsTotal": {
+          "type": "number"
+        },
+        "assetsAvg": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

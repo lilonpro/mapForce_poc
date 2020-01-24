@@ -1,0 +1,45 @@
+{
+	"client": {
+		"firstName": "James",
+		"lastName": "Bond",
+		"dob": "1949-10-01",
+		"relationships": [
+			{
+				"firstName": "Jim",
+				"lastName": "Bond",
+				"dob": "1979-10-01",
+				"offset": 1,
+				"type": "son",
+				"relationships": [
+						{
+						"firstName": "Jim",
+						"lastName": "Bond",
+						"dob": "1979-10-01",
+						"offset": 1,
+						"type": "son"
+					}
+				]
+			}
+		]
+	},
+	"retirementDate": "2009-10-10",
+	"plans": [
+		{
+			"id": "123",
+			"name": "plan_0"
+		},
+		{
+			"id": "234",
+			"name": "plan_1"
+		},
+		{
+			"id": "345",
+			"name": "plan_2"
+		}
+	],
+	"assets": {
+		"cash": 100,
+		"stock": 200,
+		"insurance": 300
+	}
+}

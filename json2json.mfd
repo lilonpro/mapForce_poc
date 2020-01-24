@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2020sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="25">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="24" kind="2">
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view ltx="442" lty="169" rbx="490" rby="186"/>
+					<data>
+						<constant value="0" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="25" kind="2">
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="442" lty="187" rbx="490" rby="204"/>
+					<data>
+						<constant value="4" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="26" kind="2">
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="384" lty="260" rbx="432" rby="277"/>
+					<data>
+						<constant value="5" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="27" kind="2">
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="384" lty="287" rbx="432" rby="304"/>
+					<data>
+						<constant value="2" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="28" kind="2">
+					<targets>
+						<datapoint pos="0" key="23"/>
+					</targets>
+					<view ltx="384" lty="357" rbx="432" rby="374"/>
+					<data>
+						<constant value="8" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="29" kind="2">
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view ltx="384" lty="397" rbx="432" rby="414"/>
+					<data>
+						<constant value="2" datatype="string"/>
+					</data>
+				</component>
+				<component name="substring" library="core" uid="17" kind="5">
+					<sources>
+						<datapoint pos="0" key="1"/>
+						<datapoint pos="1" key="25"/>
+						<datapoint pos="2" key="26"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="521" lty="134" rbx="604" rby="204"/>
+				</component>
+				<component name="number" library="core" uid="31" kind="5">
+					<sources>
+						<datapoint pos="0" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="648" lty="166" rbx="715" rby="204"/>
+				</component>
+				<component name="substring" library="core" uid="18" kind="5">
+					<sources>
+						<datapoint pos="0" key="3"/>
+						<datapoint pos="1" key="27"/>
+						<datapoint pos="2" key="28"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="29"/>
+					</targets>
+					<view ltx="521" lty="234" rbx="604" rby="304"/>
+				</component>
+				<component name="number" library="core" uid="32" kind="5">
+					<sources>
+						<datapoint pos="0" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="665" lty="260" rbx="732" rby="298"/>
+				</component>
+				<component name="substring" library="core" uid="19" kind="5">
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="30"/>
+						<datapoint pos="2" key="31"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="521" lty="332" rbx="604" rby="402"/>
+				</component>
+				<component name="number" library="core" uid="33" kind="5">
+					<sources>
+						<datapoint pos="0" key="15"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="678" lty="336" rbx="745" rby="374"/>
+				</component>
+				<component name="household" library="json" uid="4" kind="31">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="350" rby="509"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="root" expanded="1">
+										<entry name="object" expanded="1">
+											<entry name="client" type="json-property" expanded="1">
+												<entry name="object" expanded="1">
+													<entry name="firstName" type="json-property" expanded="1">
+														<entry name="string" outkey="7"/>
+													</entry>
+													<entry name="lastName" type="json-property" expanded="1">
+														<entry name="string" outkey="8"/>
+													</entry>
+													<entry name="dob" type="json-property" expanded="1">
+														<entry name="string" outkey="2"/>
+													</entry>
+													<entry name="offset" type="json-property" expanded="1">
+														<entry name="number" outkey="33"/>
+													</entry>
+													<entry name="type" type="json-property" expanded="1"/>
+													<entry name="relationships" type="json-property" expanded="1">
+														<entry name="array" expanded="1">
+															<entry name="item" type="json-item" expanded="1">
+																<entry name="object" expanded="1">
+																	<entry name="firstName" type="json-property" expanded="1"/>
+																	<entry name="lastName" type="json-property" expanded="1"/>
+																	<entry name="dob" type="json-property" expanded="1"/>
+																	<entry name="offset" type="json-property" expanded="1"/>
+																	<entry name="type" type="json-property" expanded="1"/>
+																	<entry name="relationships" type="json-property" expanded="1">
+																		<entry name="array">
+																			<entry name="item" type="json-item" expanded="1"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="retirementDate" type="json-property" expanded="1"/>
+											<entry name="plans" type="json-property" expanded="1">
+												<entry name="array" expanded="1">
+													<entry name="item" type="json-item" expanded="1">
+														<entry name="object" expanded="1">
+															<entry name="id" type="json-property" expanded="1"/>
+															<entry name="name" type="json-property" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="assets" type="json-property" expanded="1">
+												<entry name="object" expanded="1">
+													<entry name="cash" type="json-property" expanded="1"/>
+													<entry name="stock" type="json-property" expanded="1"/>
+													<entry name="insurance" type="json-property" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<json schema="household.schema.json" inputinstance="household.json" outputinstance="household.json"/>
+					</data>
+				</component>
+				<component name="hh" library="json" uid="5" kind="31">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="802" rbx="1102" rby="835"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="root" expanded="1">
+										<entry name="object" expanded="1">
+											<entry name="client" type="json-property" expanded="1">
+												<entry name="object" expanded="1">
+													<entry name="name" type="json-property" expanded="1">
+														<entry name="object" expanded="1">
+															<entry name="give" type="json-property" expanded="1">
+																<entry name="string" inpkey="5"/>
+															</entry>
+															<entry name="family" type="json-property" expanded="1">
+																<entry name="string" inpkey="6"/>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="dob" type="json-property" expanded="1">
+														<entry name="object" expanded="1">
+															<entry name="year" type="json-property" expanded="1">
+																<entry name="number" inpkey="12"/>
+															</entry>
+															<entry name="month" type="json-property" expanded="1">
+																<entry name="number" inpkey="17"/>
+															</entry>
+															<entry name="date" type="json-property" expanded="1">
+																<entry name="number" inpkey="18"/>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="offset" type="json-property" expanded="1">
+														<entry name="number" inpkey="34"/>
+													</entry>
+													<entry name="relationships" type="json-property" expanded="1">
+														<entry name="array" expanded="1">
+															<entry name="item" type="json-item" expanded="1">
+																<entry name="object" expanded="1">
+																	<entry name="name" type="json-property" expanded="1">
+																		<entry name="object" expanded="1">
+																			<entry name="give" type="json-property" expanded="1"/>
+																			<entry name="family" type="json-property" expanded="1"/>
+																		</entry>
+																	</entry>
+																	<entry name="dob" type="json-property" expanded="1">
+																		<entry name="object" expanded="1">
+																			<entry name="year" type="json-property" expanded="1"/>
+																			<entry name="month" type="json-property" expanded="1"/>
+																			<entry name="date" type="json-property" expanded="1"/>
+																		</entry>
+																	</entry>
+																	<entry name="offset" type="json-property" expanded="1"/>
+																	<entry name="relationships" type="json-property" expanded="1">
+																		<entry name="array" expanded="1">
+																			<entry name="item" type="json-item" expanded="1">
+																				<entry name="object" expanded="1">
+																					<entry name="name" type="json-property" expanded="1">
+																						<entry name="object" expanded="1">
+																							<entry name="give" type="json-property" expanded="1"/>
+																							<entry name="family" type="json-property" expanded="1"/>
+																						</entry>
+																					</entry>
+																					<entry name="dob" type="json-property" expanded="1">
+																						<entry name="object" expanded="1">
+																							<entry name="year" type="json-property" expanded="1"/>
+																							<entry name="month" type="json-property" expanded="1"/>
+																							<entry name="date" type="json-property" expanded="1"/>
+																						</entry>
+																					</entry>
+																					<entry name="offset" type="json-property" expanded="1"/>
+																					<entry name="relationships" type="json-property" expanded="1">
+																						<entry name="array" expanded="1">
+																							<entry name="item" type="json-item" expanded="1">
+																								<entry name="object" expanded="1">
+																									<entry name="name" type="json-property" expanded="1"/>
+																									<entry name="dob" type="json-property" expanded="1"/>
+																									<entry name="offset" type="json-property" expanded="1"/>
+																									<entry name="relationships" type="json-property" expanded="1"/>
+																									<entry name="type" type="json-property" expanded="1"/>
+																								</entry>
+																							</entry>
+																						</entry>
+																					</entry>
+																					<entry name="type" type="json-property" expanded="1"/>
+																				</entry>
+																			</entry>
+																		</entry>
+																	</entry>
+																	<entry name="type" type="json-property" expanded="1"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="type" type="json-property" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="retirementAge" type="json-property" expanded="1"/>
+											<entry name="plans" type="json-property" expanded="1">
+												<entry name="array" expanded="1">
+													<entry name="item" type="json-item" expanded="1">
+														<entry name="object" expanded="1">
+															<entry name="id" type="json-property" expanded="1"/>
+															<entry name="name" type="json-property" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="assetsTotal" type="json-property" expanded="1"/>
+											<entry name="assetsAvg" type="json-property" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<json schema="hh.schema.json" inputinstance="hh.json" outputinstance="hh.json"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="1"/>
+							<edge vertexkey="3"/>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="34"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
