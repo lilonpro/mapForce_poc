@@ -48,51 +48,6 @@
 						<constant value="0" datatype="string"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="25" kind="2">
-					<targets>
-						<datapoint pos="0" key="20"/>
-					</targets>
-					<view ltx="359" lty="-279" rbx="407" rby="-262"/>
-					<data>
-						<constant value="4" datatype="string"/>
-					</data>
-				</component>
-				<component name="constant" library="core" uid="26" kind="2">
-					<targets>
-						<datapoint pos="0" key="21"/>
-					</targets>
-					<view ltx="359" lty="-248" rbx="407" rby="-231"/>
-					<data>
-						<constant value="5" datatype="string"/>
-					</data>
-				</component>
-				<component name="constant" library="core" uid="27" kind="2">
-					<targets>
-						<datapoint pos="0" key="22"/>
-					</targets>
-					<view ltx="359" lty="-232" rbx="407" rby="-215"/>
-					<data>
-						<constant value="2" datatype="string"/>
-					</data>
-				</component>
-				<component name="constant" library="core" uid="28" kind="2">
-					<targets>
-						<datapoint pos="0" key="23"/>
-					</targets>
-					<view ltx="359" lty="-195" rbx="407" rby="-178"/>
-					<data>
-						<constant value="8" datatype="string"/>
-					</data>
-				</component>
-				<component name="constant" library="core" uid="29" kind="2">
-					<targets>
-						<datapoint pos="0" key="24"/>
-					</targets>
-					<view ltx="359" lty="-179" rbx="407" rby="-162"/>
-					<data>
-						<constant value="2" datatype="string"/>
-					</data>
-				</component>
 				<component name="number" library="core" uid="32" kind="5">
 					<sources>
 						<datapoint pos="0" key="13"/>
@@ -168,6 +123,17 @@
 						<datapoint pos="0" key="71"/>
 					</targets>
 					<view ltx="736" lty="-94" rbx="803" rby="-56"/>
+				</component>
+				<component name="substring" library="core" uid="35" kind="5">
+					<sources>
+						<datapoint pos="0" key="39"/>
+						<datapoint pos="1" key="41"/>
+						<datapoint pos="2" key="42"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="40"/>
+					</targets>
+					<view ltx="585" lty="-232" rbx="668" rby="-162"/>
 				</component>
 				<component name="hh" library="json" uid="5" kind="31">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
@@ -309,16 +275,50 @@
 						<json schema="hh.schema.json" inputinstance="hh.json" outputinstance="hh.json"/>
 					</data>
 				</component>
-				<component name="substring" library="core" uid="35" kind="5">
-					<sources>
-						<datapoint pos="0" key="39"/>
-						<datapoint pos="1" key="41"/>
-						<datapoint pos="2" key="42"/>
-					</sources>
+				<component name="constant" library="core" uid="25" kind="2">
 					<targets>
-						<datapoint pos="0" key="40"/>
+						<datapoint pos="0" key="20"/>
 					</targets>
-					<view ltx="585" lty="-232" rbx="668" rby="-162"/>
+					<view ltx="359" lty="-279" rbx="407" rby="-262"/>
+					<data>
+						<constant value="5" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="26" kind="2">
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="359" lty="-248" rbx="407" rby="-231"/>
+					<data>
+						<constant value="6" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="28" kind="2">
+					<targets>
+						<datapoint pos="0" key="23"/>
+					</targets>
+					<view ltx="359" lty="-195" rbx="407" rby="-178"/>
+					<data>
+						<constant value="9" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="27" kind="2">
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="359" lty="-232" rbx="407" rby="-215"/>
+					<data>
+						<constant value="2" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="29" kind="2">
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view ltx="359" lty="-179" rbx="407" rby="-162"/>
+					<data>
+						<constant value="2" datatype="string"/>
+					</data>
 				</component>
 				<component name="household" library="json" uid="4" kind="31">
 					<properties XSLTTargetEncoding="UTF-8"/>
@@ -372,7 +372,7 @@
 																	<entry name="relationships" type="json-property" expanded="1">
 																		<entry name="array" expanded="1">
 																			<entry name="item" type="json-item" expanded="1">
-																				<entry name="object" expanded="1">
+																				<entry name="object">
 																					<entry name="firstName" type="json-property" expanded="1"/>
 																					<entry name="lastName" type="json-property" expanded="1"/>
 																					<entry name="dob" type="json-property" expanded="1"/>
@@ -615,6 +615,23 @@
 					</vertex>
 				</vertices>
 			</graph>
+		</structure>
+	</component>
+	<component name="client" library="user" uid="53" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="result" library="core" uid="54" kind="7">
+					<sources>
+						<datapoint/>
+					</sources>
+					<view ltx="1216" rbx="1273" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
 		</structure>
 	</component>
 </mapping>
