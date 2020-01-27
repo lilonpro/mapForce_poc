@@ -22,10 +22,14 @@
 									<entry name="root" expanded="1">
 										<entry name="object" expanded="1">
 											<entry name="client" type="json-property" expanded="1">
-												<entry name="object" expanded="1">
+												<entry name="object" outkey="6" expanded="1">
 													<entry name="firstName" type="json-property" expanded="1"/>
-													<entry name="lastName" type="json-property" expanded="1"/>
-													<entry name="dob" type="json-property" expanded="1"/>
+													<entry name="lastName" type="json-property" expanded="1">
+														<entry name="string" outkey="10"/>
+													</entry>
+													<entry name="dob" type="json-property" expanded="1">
+														<entry name="string" outkey="11"/>
+													</entry>
 													<entry name="offset" type="json-property" expanded="1"/>
 													<entry name="type" type="json-property" expanded="1"/>
 													<entry name="relationships" type="json-property" expanded="1">
@@ -98,20 +102,30 @@
 											</entry>
 											<entry name="retirementDate" type="json-property" expanded="1"/>
 											<entry name="plans" type="json-property" expanded="1">
-												<entry name="array" expanded="1">
+												<entry name="array" outkey="23" expanded="1">
 													<entry name="item" type="json-item" expanded="1">
-														<entry name="object" expanded="1">
-															<entry name="id" type="json-property" expanded="1"/>
-															<entry name="name" type="json-property" expanded="1"/>
+														<entry name="object" outkey="24" expanded="1">
+															<entry name="id" type="json-property" expanded="1">
+																<entry name="string" outkey="25"/>
+															</entry>
+															<entry name="name" type="json-property" expanded="1">
+																<entry name="string" outkey="26"/>
+															</entry>
 														</entry>
 													</entry>
 												</entry>
 											</entry>
 											<entry name="assets" type="json-property" expanded="1">
 												<entry name="object" expanded="1">
-													<entry name="cash" type="json-property" expanded="1"/>
-													<entry name="stock" type="json-property" expanded="1"/>
-													<entry name="insurance" type="json-property" expanded="1"/>
+													<entry name="cash" type="json-property" expanded="1">
+														<entry name="number" outkey="28"/>
+													</entry>
+													<entry name="stock" type="json-property" expanded="1">
+														<entry name="number" outkey="29"/>
+													</entry>
+													<entry name="insurance" type="json-property" expanded="1">
+														<entry name="number" outkey="30"/>
+													</entry>
 												</entry>
 											</entry>
 										</entry>
@@ -123,8 +137,8 @@
 					</data>
 				</component>
 				<component name="hh" library="json" uid="5" kind="31">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="605" lty="-415" rbx="905" rby="420"/>
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="605" lty="-415" rbx="831" rby="-26"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -141,20 +155,30 @@
 												<entry name="object" expanded="1">
 													<entry name="name" type="json-property" expanded="1">
 														<entry name="object" expanded="1">
-															<entry name="give" type="json-property" expanded="1"/>
-															<entry name="family" type="json-property" expanded="1"/>
+															<entry name="give" type="json-property" expanded="1">
+																<entry name="string" inpkey="8"/>
+															</entry>
+															<entry name="family" type="json-property" expanded="1">
+																<entry name="string" inpkey="9"/>
+															</entry>
 														</entry>
 													</entry>
 													<entry name="dob" type="json-property" expanded="1">
 														<entry name="object" expanded="1">
-															<entry name="year" type="json-property" expanded="1"/>
-															<entry name="month" type="json-property" expanded="1"/>
-															<entry name="date" type="json-property" expanded="1"/>
+															<entry name="year" type="json-property" expanded="1">
+																<entry name="number" inpkey="13"/>
+															</entry>
+															<entry name="month" type="json-property" expanded="1">
+																<entry name="number" inpkey="14"/>
+															</entry>
+															<entry name="date" type="json-property" expanded="1">
+																<entry name="number" inpkey="15"/>
+															</entry>
 														</entry>
 													</entry>
 													<entry name="offset" type="json-property" expanded="1"/>
 													<entry name="relationships" type="json-property" expanded="1">
-														<entry name="array" expanded="1">
+														<entry name="array">
 															<entry name="item" type="json-item" expanded="1">
 																<entry name="object" expanded="1">
 																	<entry name="name" type="json-property" expanded="1">
@@ -217,17 +241,25 @@
 											</entry>
 											<entry name="retirementAge" type="json-property" expanded="1"/>
 											<entry name="plans" type="json-property" expanded="1">
-												<entry name="array" expanded="1">
+												<entry name="array" inpkey="19" expanded="1">
 													<entry name="item" type="json-item" expanded="1">
-														<entry name="object" expanded="1">
-															<entry name="id" type="json-property" expanded="1"/>
-															<entry name="name" type="json-property" expanded="1"/>
+														<entry name="object" inpkey="20" expanded="1">
+															<entry name="id" type="json-property" expanded="1">
+																<entry name="string" inpkey="21"/>
+															</entry>
+															<entry name="name" type="json-property" expanded="1">
+																<entry name="string" inpkey="22"/>
+															</entry>
 														</entry>
 													</entry>
 												</entry>
 											</entry>
-											<entry name="assetsTotal" type="json-property" expanded="1"/>
-											<entry name="assetsAvg" type="json-property" expanded="1"/>
+											<entry name="assetsTotal" type="json-property" expanded="1">
+												<entry name="number" inpkey="27"/>
+											</entry>
+											<entry name="assetsAvg" type="json-property" expanded="1">
+												<entry name="number" inpkey="35"/>
+											</entry>
 										</entry>
 									</entry>
 								</entry>
@@ -236,39 +268,256 @@
 						<json schema="hh.schema.json" inputinstance="hh.json" outputinstance="hh.json"/>
 					</data>
 				</component>
+				<component name="client" library="user" uid="83" kind="19" visible="0" blackbox="0">
+					<view ltx="347" lty="-415" rbx="506" rby="-297"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="client" componentid="85" expanded="1">
+								<entry name="client" inpkey="7" expanded="1"/>
+							</entry>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="4" componentid="54"/>
+						</root>
+					</data>
+				</component>
+				<component name="dobSpliter" library="user" uid="87" kind="19" visible="0" blackbox="0">
+					<view ltx="347" lty="-251" rbx="471" rby="-201"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="dobString" inpkey="12" componentid="57"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="year" outkey="16" componentid="78"/>
+							<entry name="month" outkey="17" componentid="79"/>
+							<entry name="date" outkey="18" componentid="80"/>
+						</root>
+					</data>
+				</component>
+				<component name="add" library="core" uid="91" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="31"/>
+						<datapoint pos="1" key="32"/>
+						<datapoint pos="2" key="33"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="34"/>
+					</targets>
+					<view ltx="347" lty="-156" rbx="429" rby="-85"/>
+				</component>
+				<component name="add" library="core" uid="95" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="40"/>
+						<datapoint pos="1" key="41"/>
+						<datapoint pos="2" key="42"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="43"/>
+					</targets>
+					<view ltx="347" lty="-40" rbx="429" rby="31"/>
+				</component>
+				<component name="divide" library="core" uid="97" kind="5">
+					<sources>
+						<datapoint pos="0" key="45"/>
+						<datapoint pos="1" key="46"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="47"/>
+					</targets>
+					<view ltx="473" lty="-21" rbx="545" rby="31"/>
+				</component>
+				<component name="constant" library="core" uid="98" kind="2">
+					<targets>
+						<datapoint pos="0" key="44"/>
+					</targets>
+					<view ltx="378" lty="31" rbx="415" rby="47"/>
+					<data>
+						<constant value="3" datatype="decimal"/>
+					</data>
+				</component>
 			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="31"/>
+							<edge vertexkey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="32"/>
+							<edge vertexkey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="33"/>
+							<edge vertexkey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47">
+						<edges>
+							<edge vertexkey="35"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="44">
+						<edges>
+							<edge vertexkey="46"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
 		</structure>
 	</component>
 	<component name="client" library="user" uid="53" editable="1" blackbox="0">
 		<structure>
 			<children>
+				<component name="document" library="xml" uid="85" kind="14">
+					<properties/>
+					<view ltx="31" lty="21" rbx="182" rby="132"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="client" expanded="1">
+								<entry name="firstName" outkey="3"/>
+								<entry name="relationships">
+									<entry name="client">
+										<entry name="relationships" expanded="1">
+											<entry name="client" expanded="1">
+												<entry name="relationships" expanded="1">
+													<entry name="client" expanded="1">
+														<entry name="relationships" expanded="1">
+															<entry name="client" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="client.xsd" instanceroot="{}client"/>
+						<parameter usageKind="input" name="client"/>
+					</data>
+				</component>
 				<component name="result" library="core" uid="54" kind="7">
 					<sources>
-						<datapoint/>
+						<datapoint pos="0" key="1"/>
 					</sources>
-					<view ltx="1216" rbx="1273" rby="38"/>
+					<view ltx="372" lty="60" rbx="424" rby="96"/>
 					<data>
 						<output datatype="string"/>
 						<parameter usageKind="output" name="result"/>
 					</data>
 				</component>
 			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
 		</structure>
 	</component>
 	<component name="dobSpliter" library="user" uid="55" inline="1" editable="1" blackbox="0">
-		<description/>
 		<structure>
 			<children>
-				<component name="result" library="core" uid="56" kind="7">
-					<sources>
-						<datapoint/>
-					</sources>
-					<view ltx="1236" rbx="1293" rby="38"/>
-					<data>
-						<output datatype="string"/>
-						<parameter usageKind="output" name="result"/>
-					</data>
-				</component>
 				<component name="dobString" library="core" uid="57" kind="6">
 					<sources>
 						<datapoint/>
@@ -276,7 +525,7 @@
 					<targets>
 						<datapoint pos="0" key="1"/>
 					</targets>
-					<view ltx="42" lty="272" rbx="151" rby="310"/>
+					<view ltx="42" lty="272" rbx="138" rby="308"/>
 					<data>
 						<input datatype="string"/>
 						<parameter usageKind="input" name="dobString"/>
@@ -291,7 +540,7 @@
 					<targets>
 						<datapoint pos="0" key="5"/>
 					</targets>
-					<view ltx="310" lty="180" rbx="393" rby="250"/>
+					<view ltx="310" lty="180" rbx="382" rby="248"/>
 				</component>
 				<component name="substring" library="core" uid="63" kind="5">
 					<sources>
@@ -302,7 +551,7 @@
 					<targets>
 						<datapoint pos="0" key="7"/>
 					</targets>
-					<view ltx="310" lty="272" rbx="393" rby="342"/>
+					<view ltx="310" lty="272" rbx="382" rby="340"/>
 				</component>
 				<component name="substring" library="core" uid="61" kind="5">
 					<sources>
@@ -313,13 +562,13 @@
 					<targets>
 						<datapoint pos="0" key="9"/>
 					</targets>
-					<view ltx="310" lty="368" rbx="393" rby="438"/>
+					<view ltx="310" lty="368" rbx="382" rby="436"/>
 				</component>
 				<component name="constant" library="core" uid="72" kind="2">
 					<targets>
 						<datapoint pos="0" key="17"/>
 					</targets>
-					<view ltx="215" lty="218" rbx="255" rby="235"/>
+					<view ltx="215" lty="218" rbx="252" rby="234"/>
 					<data>
 						<constant value="0" datatype="decimal"/>
 					</data>
@@ -328,7 +577,7 @@
 					<targets>
 						<datapoint pos="0" key="20"/>
 					</targets>
-					<view ltx="215" lty="325" rbx="255" rby="342"/>
+					<view ltx="215" lty="325" rbx="252" rby="341"/>
 					<data>
 						<constant value="2" datatype="decimal"/>
 					</data>
@@ -337,7 +586,7 @@
 					<targets>
 						<datapoint pos="0" key="22"/>
 					</targets>
-					<view ltx="215" lty="421" rbx="255" rby="438"/>
+					<view ltx="215" lty="421" rbx="252" rby="437"/>
 					<data>
 						<constant value="2" datatype="decimal"/>
 					</data>
@@ -346,7 +595,7 @@
 					<sources>
 						<datapoint pos="0" key="23"/>
 					</sources>
-					<view ltx="558" lty="197" rbx="607" rby="235"/>
+					<view ltx="558" lty="197" rbx="604" rby="233"/>
 					<data>
 						<output datatype="int"/>
 						<parameter usageKind="output" name="year"/>
@@ -359,7 +608,7 @@
 					<targets>
 						<datapoint pos="0" key="24"/>
 					</targets>
-					<view ltx="446" lty="197" rbx="513" rby="235"/>
+					<view ltx="446" lty="197" rbx="507" rby="233"/>
 				</component>
 				<component name="number" library="core" uid="70" kind="5">
 					<sources>
@@ -368,7 +617,7 @@
 					<targets>
 						<datapoint pos="0" key="25"/>
 					</targets>
-					<view ltx="446" lty="289" rbx="513" rby="327"/>
+					<view ltx="446" lty="289" rbx="507" rby="325"/>
 				</component>
 				<component name="number" library="core" uid="71" kind="5">
 					<sources>
@@ -377,13 +626,13 @@
 					<targets>
 						<datapoint pos="0" key="26"/>
 					</targets>
-					<view ltx="446" lty="385" rbx="513" rby="423"/>
+					<view ltx="446" lty="385" rbx="507" rby="421"/>
 				</component>
 				<component name="month" library="core" uid="79" kind="7">
 					<sources>
 						<datapoint pos="0" key="27"/>
 					</sources>
-					<view ltx="558" lty="289" rbx="620" rby="327"/>
+					<view ltx="558" lty="289" rbx="614" rby="325"/>
 					<data>
 						<output datatype="int"/>
 						<parameter usageKind="output" name="month"/>
@@ -393,7 +642,7 @@
 					<sources>
 						<datapoint pos="0" key="28"/>
 					</sources>
-					<view ltx="558" lty="385" rbx="609" rby="423"/>
+					<view ltx="558" lty="385" rbx="605" rby="421"/>
 					<data>
 						<output datatype="int"/>
 						<parameter usageKind="output" name="date"/>
@@ -403,7 +652,7 @@
 					<targets>
 						<datapoint pos="0" key="18"/>
 					</targets>
-					<view ltx="215" lty="233" rbx="255" rby="250"/>
+					<view ltx="215" lty="233" rbx="252" rby="249"/>
 					<data>
 						<constant value="5" datatype="decimal"/>
 					</data>
@@ -412,7 +661,7 @@
 					<targets>
 						<datapoint pos="0" key="19"/>
 					</targets>
-					<view ltx="215" lty="309" rbx="255" rby="326"/>
+					<view ltx="215" lty="309" rbx="252" rby="325"/>
 					<data>
 						<constant value="6" datatype="decimal"/>
 					</data>
@@ -421,7 +670,7 @@
 					<targets>
 						<datapoint pos="0" key="21"/>
 					</targets>
-					<view ltx="215" lty="405" rbx="255" rby="422"/>
+					<view ltx="215" lty="405" rbx="252" rby="421"/>
 					<data>
 						<constant value="9" datatype="decimal"/>
 					</data>

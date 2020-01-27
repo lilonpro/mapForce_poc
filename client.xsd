@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="client" type="Client"></xs:element>
+	<xs:complexType name="Client">
+		<xs:sequence>
+			<xs:element name="dob" type="xs:date"/>
+			<xs:element name="firstName" type="xs:string"/>
+			<xs:element name="lastName" type="xs:string"/>
+			<xs:element name="relationships">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="client" type="Client"></xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

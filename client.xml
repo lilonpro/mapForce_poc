@@ -1,0 +1,23 @@
+<client>
+      <dob>1949-10-01</dob>
+      <firstName>James</firstName>
+      <lastName>Bond</lastName>
+      <relationships>
+         <client>
+            <dob>1979-10-01</dob>
+            <firstName>Jim</firstName>
+            <lastName>Bond</lastName>
+            <offset>1</offset>
+            <relationships>
+               <client>
+                  <dob>2009-10-01</dob>
+                  <firstName>Jimmy</firstName>
+                  <lastName>Bond</lastName>
+                  <offset>1</offset>
+                  <type>grandson</type>
+               </client>
+            </relationships>
+            <type>son</type>
+         </client>
+      </relationships>
+   </client>
